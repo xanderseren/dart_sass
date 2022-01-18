@@ -292,7 +292,7 @@ defmodule DartSass do
 
     # TODO: remove "arm" when we require OTP 24
     arch =
-      if platform == :macos and arch in ["aarch64", "arm"] do
+      if platform == :macos and arch in ["aarch64-unknown-linux-musl", "arm"] do
         # Using Rosetta2 for M1 until sass/dart-sass runs native
         # Link: https://github.com/sass/dart-sass/issues/1125
         "amd64"
