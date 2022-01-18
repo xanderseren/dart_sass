@@ -297,7 +297,7 @@ defmodule DartSass do
         # Link: https://github.com/sass/dart-sass/issues/1125
         "amd64"
       else
-        arch
+        "amd64"
       end
 
     case arch do
